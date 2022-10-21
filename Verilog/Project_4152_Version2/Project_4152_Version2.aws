@@ -1,0 +1,14 @@
+[Version]
+Version=13.0
+[Designs]
+memory_project_4152_v2=.\memory_project_4152_v2\memory_project_4152_v2.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+memory_project_4152_v2=1
+[Settings]
+Active=memory_project_4152_v2

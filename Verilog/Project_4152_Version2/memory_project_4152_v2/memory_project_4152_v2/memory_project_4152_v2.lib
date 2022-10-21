@@ -1,0 +1,54 @@
+timestamp=1666356922916
+
+[~A]
+LastVerilogToplevel=bitcell_tb
+ModifyID=13
+Version=74
+c:/My_Designs/Project_4152_Version2/memory_project_4152_v2/src/sr_latch.v_sr_latch_tb.v=0*4227*4898
+c:/My_Designs/Project_4152_Version2/memory_project_4152_v2/src/sr_latch.v_sr_latch_tb.v_bitcell.v_bitcell_tb.v=0*30939*32033
+
+[~MFT]
+0=9|0memory_project_4152_v2.mgf|32033|18139
+1=10|1memory_project_4152_v2.mgf|72623|67826
+3=20|3memory_project_4152_v2.mgf|44375|41100
+
+[$root]
+A/$root=22|||1*67826
+BinW64/$root=3*41100
+SLP=3*41215
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921612368e880966d1057294cb5f21ca63a9
+
+[bitcell]
+A/bitcell=22|../src/bitcell.v|3|1*70687
+BinW64/bitcell=3*42983
+R=../src/bitcell.v|3
+SLP=3*43100
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d93070aeb74cc8aef712683f104c8e4b26527262ddaa47cb266f3a3c4d9b973a1b0637b928b09e12dfd00de456c703a9
+
+[bitcell_tb]
+A/bitcell_tb=22|../src/bitcell_tb.v|2|1*72623
+BinW64/bitcell_tb=3*43211
+R=../src/bitcell_tb.v|2
+SLP=3*44375
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|4f50e7a9ca1c59b43f19649954403dc1e0dd7ce006a73f8fd1dd6e554d6a014844175a362b31bab13fe7f52e0bf54154
+
+[sr_latch]
+A/sr_latch=22|../src/sr_latch.v|3|1*68216
+BinW64/sr_latch=3*41283
+R=../src/sr_latch.v|3
+SLP=3*41401
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9186e68bbc6b8131b84c5ec4149ba7fce08d679eaf1bc9de9439630905b37e5f395c0e7715175c4d45f64ec66ebc5165
+
+[sr_latch_tb]
+A/sr_latch_tb=22|../src/sr_latch_tb.v|3|1*69242
+BinW64/sr_latch_tb=3*41514
+R=../src/sr_latch_tb.v|3
+SLP=3*42429
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|2e7e4b317f047dc1982916f42b96c90afb5ec96efadfff972e675c4bf5abf69e644593ff4028df7fb9da8147a666e759
+
+[~U]
+$root=12|0*29958|
+bitcell=12|0*30525|
+bitcell_tb=12|0*30753||0x10
+sr_latch=12|0*30156|
+sr_latch_tb=12|0*30355||0x10

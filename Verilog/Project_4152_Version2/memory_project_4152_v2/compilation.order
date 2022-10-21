@@ -1,0 +1,4 @@
+.\src\sr_latch.v
+.\src\sr_latch_tb.v
+.\src\bitcell.v
+.\src\bitcell_tb.v
