@@ -1,0 +1,32 @@
+[aimspice]
+[description]
+233
+Ex3b
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\90_nm_gpdk\gpdk90nm_ff.cir
+.plot id(m:mn2:1 )
+
+
+.param ln = 0.1u wn  = 1u
+
+  id 0 1 100u
+ xmn1 1 1 0 0 nmos1v l=ln w=wn
+
+  vdd 2 0 1v
+ xmn2 2 1 0 0 nmos1v l=ln w=wn
+
+
+[dc]
+1
+m:mn2:1.drain
+0
+1
+0.2
+[ana]
+1 1
+0
+1 1
+1 1 -0.2 1
+2
+v(m:mn2:1.drain)
+i(vdd)
+[end]
