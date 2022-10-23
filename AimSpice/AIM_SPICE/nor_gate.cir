@@ -1,18 +1,20 @@
 [aimspice]
 [description]
-233
-Ex3b
+351
+nor_gate
 .include C:\Users\itsom\Desktop\FALL2022\TFE4152\90_nm_gpdk\gpdk90nm_ff.cir
-.plot id(m:mn2:1 )
 
+.param ln = 1u wn = 1u
 
-.param ln = 0.1u wn  = 1u
+vdd 3 0 dc 5
+vinA 1 0 dc 0 pulse(0 5 40ns 5ns 5ns 80ns)
+vinB 2 0 dc 0 pulse(0 5 20ns 5ns 5ns 40ns)
 
-  id 0 1 100u
- xmn1 1 1 0 0 nmos1v l=ln w=wn
+xmp1 4 1 3 3 pmos1v l=ln w= wn
+xmp2 5 2 4 4 pmos1v l=ln w= wn
 
-  vdd 2 0 1v
- xmn2 2 1 0 0 nmos1v l=ln w=wn
+xmn1 5 1 0 0 nmos1v l=ln w= wn
+xmn2 5 2 0 0 nmos1v l=ln w= wn
 
 
 [dc]
@@ -21,12 +23,12 @@ m:mn2:1.drain
 0
 1
 0.2
-[ana]
-1 1
+[tran]
+1
+80ns
+X
+X
 0
-1 1
-1 1 -0.2 1
-2
-v(m:mn2:1.drain)
-i(vdd)
+[ana]
+4 0
 [end]

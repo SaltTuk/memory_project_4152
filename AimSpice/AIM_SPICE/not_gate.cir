@@ -7,7 +7,7 @@ not_gate
 .param ln = 1u wn = 1u
 
 vdd 3 0 dc 5
-vin 1 0 dc 0 pulse(0 5 10ns 1ns 1ns 25ns)
+vin 1 0 dc 0 pulse(0 5 25ns 1ns 1ns 50ns)
 xmp1 2 1 3 3 pmos1v l=ln w= wn
 xmn2 2 1 0 0 nmos1v l=ln w= wn
 [dc]
@@ -17,11 +17,16 @@ vin
 5
 1
 [tran]
-0.5
+1
 50ns
 X
 X
 0
 [ana]
-4 0
+4 1
+0
+1 1
+1 1 -1 6
+1
+v(2)
 [end]
