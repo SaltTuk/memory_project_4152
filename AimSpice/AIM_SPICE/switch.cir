@@ -1,11 +1,11 @@
 *               1 - input 2 - Output  3 - control 4 - Not control 5 - vdd
 .subckt switch 1 2 3 4 5
 
-.param ln = 1u wn  = 1u
-.param lp = 1u wp  = 1u
+.param ln_swtch = 1u wn_swtch  = 1u
+.param lp_swtch = 1u wp_swtch  = 1u
 
 *     d g s b 
- xmn1 1 3 2 0 nmos1v l=ln w=wn
- xmp1 1 4 2 5 pmos1v l=lp w=wp
+ xmn1 1 3 2 0 nmos1v l=ln_swtch w=wn_swtch
+ xmp1 1 4 2 5 pmos1v l=lp_swtch w=wp_swtch
 
 .ends

@@ -1,0 +1,15 @@
+*                1 - Input A 2 - Input B 3 - Input C 4 - VDD 5 - Output 
+.subckt nor_gate3 1 2 3 4 5 
+.param ln_nor3 = 1u wn_nor3 = 1u
+.param lp_nor3 = 1u wp_nor3 = 1u
+
+*    d g s b
+xmp1 7 1 4 4 pmos1v l=lp_nor3 w=wp_nor3
+xmp2 6 2 7 7 pmos1v l=lp_nor3 w=wp_nor3
+xmp3 5 3 6 6 pmos1v l=lp_nor3 w=wp_nor3
+
+xmn1 5 1 0 0 nmos1v l=ln_nor3 w=wn_nor3
+xmn2 5 2 0 0 nmos1v l=ln_nor3 w=wn_nor3
+xmn3 5 3 0 0 nmos1v l=ln_nor3 w=wn_nor3
+
+.ends

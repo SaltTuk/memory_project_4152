@@ -1,23 +1,62 @@
 [aimspice]
 [description]
-233
-Ex3b
+1093
+Bitcell
 .include C:\Users\itsom\Desktop\FALL2022\TFE4152\90_nm_gpdk\gpdk90nm_ff.cir
-.plot id(m:mn2:1 )
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\nor_gate3.cir
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\nor_gate.cir
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\not_gate.cir
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\switch.cir
+.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\sr_latch.cir
 
 
-.param ln = 0.1u wn  = 1u
+vinInp 3 0 dc 0 pulse(0 5 0ns 5ns 5ns 20ns 40ns)
+vinWoR 2 0 dc 0 pulse(0 5 20ns 5ns 5ns 40ns 80ns)
+vinSel 1 0 dc 0 pulse(0 5 0ns 5ns 5ns 160ns 320ns)
+vdd  6 0 dc 5
 
-  id 0 1 100u
- xmn1 1 1 0 0 nmos1v l=ln w=wn
+* inverted select signal  1 - VIN 2 - VOUT  3 - VDD
+xnot1 1 4 6 not_gate
+*inverted input signal 
+xnot2 3 5 6 not_gate
 
-  vdd 2 0 1v
- xmn2 2 1 0 0 nmos1v l=ln w=wn
+* NOR gate for R 1 - Input A 2 - Input B 3 - Input C 4 - VDD 5 - Output 
+xnor1 4 2 3 6 7 nor_gate3
+* NOR gate for S 
+xnor2 4 2 5 6 8 nor_gate3
 
+* SR Latch  R S VDD Q NQ  
+xlatch1 7 8 6 9 10 sr_latch   
 
-* vdd1  5 0 dc 5
-
-vin1 3 0 dc 0 pulse(0 5 0ns 5ns 5ns 80ns 160ns)
-vin2 4 0 dc 0 pulse(5 0 0ns 5ns 5ns 80ns 160ns)
-
-vinA 1 0 dc 0 pulse(0 5 0ns 5ns 5ns 20ns 40ns)
+* Switch  1 - input 2 - Output  3 - control 4 - Not control 5 - vdd
+xswitch 9 11 1 4 6 switch
+[dc]
+1
+m:mn2:1.drain
+0
+1
+0.2
+[tran]
+0.1
+320ns
+X
+X
+0
+[ana]
+4 2
+0
+1 1
+1 1 -1 6
+3
+v(3)
+v(2)
+v(11)
+0
+1 1
+1 1 -1 6
+4
+v(1)
+v(2)
+v(3)
+v(11)
+[end]
