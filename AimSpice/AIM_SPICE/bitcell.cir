@@ -15,18 +15,9 @@ Ex3b
  xmn2 2 1 0 0 nmos1v l=ln w=wn
 
 
-[dc]
-1
-m:mn2:1.drain
-0
-1
-0.2
-[ana]
-1 1
-0
-1 1
-1 1 -0.2 1
-2
-v(m:mn2:1.drain)
-i(vdd)
-[end]
+* vdd1  5 0 dc 5
+
+vin1 3 0 dc 0 pulse(0 5 0ns 5ns 5ns 80ns 160ns)
+vin2 4 0 dc 0 pulse(5 0 0ns 5ns 5ns 80ns 160ns)
+
+vinA 1 0 dc 0 pulse(0 5 0ns 5ns 5ns 20ns 40ns)

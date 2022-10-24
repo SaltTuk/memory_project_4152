@@ -1,6 +1,6 @@
 *                R S Q NQ             
 .subckt sr_latch 1 2 4 5
-
+*      A B VDD OUT
 xnor1  1 5 3 4 nor_gate
 xnor2  2 4 6 5 nor_gate 
 
