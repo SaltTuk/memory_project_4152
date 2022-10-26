@@ -1,19 +1,19 @@
 [aimspice]
 [description]
-1093
+763
 Bitcell
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\90_nm_gpdk\gpdk90nm_ff.cir
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\nor_gate3.cir
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\nor_gate.cir
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\not_gate.cir
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\switch.cir
-.include C:\Users\itsom\Desktop\FALL2022\TFE4152\Project\AIM_SPICE\sr_latch.cir
+.include 90_nm_gpdk\gpdk90nm_ff.cir
+.include nor_gate3.cir
+.include nor_gate.cir
+.include not_gate.cir
+.include switch.cir
+.include sr_latch.cir
 
 
-vinInp 3 0 dc 0 pulse(0 5 0ns 5ns 5ns 20ns 40ns)
-vinWoR 2 0 dc 0 pulse(0 5 20ns 5ns 5ns 40ns 80ns)
-vinSel 1 0 dc 0 pulse(0 5 0ns 5ns 5ns 160ns 320ns)
-vdd  6 0 dc 5
+vinInp 3 0 dc 0 pulse(0 1 0ns 5ns 5ns 20ns 40ns)
+vinWoR 2 0 dc 0 pulse(0 1 20ns 5ns 5ns 40ns 80ns)
+vinSel 1 0 dc 0 pulse(0 1 0ns 5ns 5ns 160ns 320ns)
+vdd  6 0 dc 1
 
 * inverted select signal  1 - VIN 2 - VOUT  3 - VDD
 xnot1 1 4 6 not_gate
@@ -30,12 +30,6 @@ xlatch1 7 8 6 9 10 sr_latch
 
 * Switch  1 - input 2 - Output  3 - control 4 - Not control 5 - vdd
 xswitch 9 11 1 4 6 switch
-[dc]
-1
-m:mn2:1.drain
-0
-1
-0.2
 [tran]
 0.1
 320ns
@@ -43,20 +37,13 @@ X
 X
 0
 [ana]
-4 2
+4 1
 0
 1 1
-1 1 -1 6
-3
-v(3)
-v(2)
-v(11)
-0
-1 1
-1 1 -1 6
+1 1 -0.5 1.5
 4
-v(1)
-v(2)
 v(3)
+v(2)
+v(1)
 v(11)
 [end]

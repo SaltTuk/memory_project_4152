@@ -1,7 +1,7 @@
 *                 1 - VIN 2 - VOUT  3 - VDD
 .subckt not_gate 1 2 3
-.param ln_not = 1u wn_not = 1u 
-.param lp_not = 1u wp_not = 1u 
+.param ln_not = 0.3u wn_not = 0.5u 
+.param lp_not = 0.3u wp_not = 1.5u 
 *    d g s b 
 xmp1 2 1 3 3 pmos1v l=lp_not w= wp_not
 xmn2 2 1 0 0 nmos1v l=ln_not w= wn_not
