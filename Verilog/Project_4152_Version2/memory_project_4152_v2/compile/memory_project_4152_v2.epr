@@ -1,4 +1,1 @@
-"../src/sr_latch.v"	1
-"../src/sr_latch_tb.v"	1
-"../src/bitcell.v"	1
-"../src/bitcell_tb.v"	1
+"../src/mem.v"	1

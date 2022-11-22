@@ -1,4 +1,4 @@
-`timescale 1 ns / 1 ps
+			  `timescale 1 ns / 1 ps
 module mem_tb;
   reg  RW;
   reg  [7:0] i;	 
@@ -13,35 +13,87 @@ module mem_tb;
 	  begin	 
 		    // Write ADR 7 Value 4
 		    assign RW    = 0;  
-		    assign addr  = 7; 
-			assign i     = 4;			
+		    assign addr  = 0; 
+			assign i     = 12;			
         #20	
-		    // Write ADR 3 Value 2  
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 1; 
+			assign i     = 13;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 2; 
+			assign i     = 14;			
+        #20	
+		    // Write ADR 7 Value 4
 		    assign RW    = 0;  
 		    assign addr  = 3; 
-			assign i     = 2;				
-		#20	
-		    // Read ADR 3
+			assign i     = 15;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 4; 
+			assign i     = 16;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 5; 
+			assign i     = 17;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 6; 
+			assign i     = 18;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 0;  
+		    assign addr  = 7; 
+			assign i     = 19;			
+        #20	
+
+		    // Write ADR 7 Value 4
 		    assign RW    = 1;  
-		    assign addr  = 3;
-			assign i     = 0;
-		#20	
-		    // Read ADR 7 
+		    assign addr  = 0; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
 		    assign RW    = 1;  
-		    assign addr  = 7;
-			assign i     = 0;
-		#20	
-		    // Read ADR 1
+		    assign addr  = 1; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
 		    assign RW    = 1;  
-		    assign addr  = 1;
-			assign i     = 5;
-		#20	
-		    // Read ADR 3
+		    assign addr  = 2; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
 		    assign RW    = 1;  
-		    assign addr  = 3;
-			assign i     = 5;
-	    #20
-		    $finish;
+		    assign addr  = 3; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 1;  
+		    assign addr  = 4; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 1;  
+		    assign addr  = 5; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 1;  
+		    assign addr  = 6; 
+			assign i     = 0;			
+        #20	
+		    // Write ADR 7 Value 4
+		    assign RW    = 1;  
+		    assign addr  = 7; 
+			assign i     = 0;			
+        #20	
+
+			$finish;
 	  end
 
 endmodule
