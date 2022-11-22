@@ -17,7 +17,9 @@ module bitcell ( select ,RW ,input_bit ,output_bit);
     .S  (S),
 	.Q  (Q),
 	.NQ (NQ)
-  );
+  ); 
   
-  and (output_bit,select,RW,Q);
+  cmos (output_bit,Q, select, n_select);
+  
+  //and (output_bit,select,RW,Q);
 endmodule
