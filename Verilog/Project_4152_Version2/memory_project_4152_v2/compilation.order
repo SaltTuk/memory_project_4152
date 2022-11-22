@@ -2,3 +2,7 @@
 .\src\sr_latch_tb.v
 .\src\bitcell.v
 .\src\bitcell_tb.v
+.\src\word.v
+.\src\word_tb.v
+.\src\mem.v
+.\src\mem_tb.v

@@ -1,11 +1,21 @@
-13
+82
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "../src/bitcell.v" 3 bitcell
 ~A 1 "../src/bitcell.v" 3 bitcell
 ~M 3 "../src/bitcell_tb.v" 2 bitcell_tb
 ~A 1 "../src/bitcell_tb.v" 2 bitcell_tb
+~M 1 "../src/mem.v" 2 mem
+~A 1 "../src/mem.v" 2 mem
+~M 3 "../src/mem_tb.v" 2 mem_tb
+~A 1 "../src/mem_tb.v" 2 mem_tb
+~M 0 "" 0 or_8
+~A 0 "" 0 or_8
 ~M 1 "../src/sr_latch.v" 3 sr_latch
 ~A 1 "../src/sr_latch.v" 3 sr_latch
 ~M 3 "../src/sr_latch_tb.v" 3 sr_latch_tb
 ~A 1 "../src/sr_latch_tb.v" 3 sr_latch_tb
+~M 1 "../src/word.v" 2 word
+~A 1 "../src/word.v" 2 word
+~M 3 "../src/word_tb.v" 2 word_tb
+~A 1 "../src/word_tb.v" 2 word_tb

@@ -1,5 +1,7 @@
 [Files List]
 C:\Aldec\Active-HDL-Student-Edition\vlib\std/src/standard.vhd=S
-c:\My_Designs\Project_4152_Version2\memory_project_4152_v2/src/sr_latch.v=S
-c:\My_Designs\Project_4152_Version2\memory_project_4152_v2/src/bitcell.v=S
-c:\My_Designs\Project_4152_Version2\memory_project_4152_v2/src/bitcell_tb.v=S
+C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2/src/sr_latch.v=S
+C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2/src/bitcell.v=S
+C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2/src/word.v=S
+C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2/src/mem.v=S
+C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2/src/mem_tb.v=S

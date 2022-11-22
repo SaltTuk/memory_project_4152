@@ -2,3 +2,6 @@ i<>.\src\sr_latch.v
 i<>.\src\sr_latch_tb.v
 i<>.\src\bitcell.v
 i<>.\src\bitcell_tb.v
+i<>.\src\word_tb.v
+i<>.\src\mem.v
+i<>.\src\mem_tb.v

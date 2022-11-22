@@ -58,8 +58,20 @@ extension11=asdb;awc;asdbc;asdbe
 /sr_latch_tb.v=-1
 /bitcell.v=-1
 /bitcell_tb.v=-1
+/word.v=-1
+/word_tb.v=-1
+/mem.v=-1
+/mem_tb.v=-1
 [Files.Data]
 .\src\sr_latch.v=Verilog Source Code
 .\src\sr_latch_tb.v=Verilog Source Code
 .\src\bitcell.v=Verilog Source Code
 .\src\bitcell_tb.v=Verilog Source Code
+.\src\word.v=Verilog Source Code
+.\src\word_tb.v=Verilog Source Code
+.\src\mem.v=Verilog Source Code
+.\src\mem_tb.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
