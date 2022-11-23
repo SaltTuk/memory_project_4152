@@ -4,10 +4,10 @@ module d_flip_flop_tb;
   wire Q,NQ;
   
   d_flip_flop f_1 (  
-  .D(D),
-  .CLK(CLK),
-  .Q(Q),
-  .NQ(NQ)
+    .D(D),
+    .CLK(CLK),
+    .Q(Q),
+    .NQ(NQ)
   );
   
   always
