@@ -5,3 +5,7 @@ i<>.\src\bitcell_tb.v
 i<>.\src\word_tb.v
 i<>.\src\mem.v
 i<>.\src\mem_tb.v
+i<>.\src\d_flip_flop.v
+i<>.\src\d_flip_flop_tb.v
+i<>.\src\fsm.v
+i<>.\src\fsm_tb.v

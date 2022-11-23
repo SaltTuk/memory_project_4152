@@ -1,23 +1,45 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
-MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
+UPDATEPROGRESS 2
+UPDATEPROGRESS 5
+UPDATEPROGRESS 8
+UPDATEPROGRESS 11
+UPDATEPROGRESS 14
+UPDATEPROGRESS 17
+UPDATEPROGRESS 20
+UPDATEPROGRESS 23
+UPDATEPROGRESS 26
+UPDATEPROGRESS 29
+UPDATEPROGRESS 32
 UPDATEPROGRESS 35
-MESSAGE_SP VCP2113 "Module word found in current working library."
 MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 40
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol S1 has not been declared in module d_flip_flop." "C:/Users/Saltuk/Deeers/Integrated/prj/memory_project_4152/Verilog/Project_4152_Version2/memory_project_4152_v2/src/d_flip_flop.v" 10  10
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol R1 has not been declared in module d_flip_flop." "C:/Users/Saltuk/Deeers/Integrated/prj/memory_project_4152/Verilog/Project_4152_Version2/memory_project_4152_v2/src/d_flip_flop.v" 11  10
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 56
+UPDATEPROGRESS 68
 UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
-MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 81
 UPDATEPROGRESS 82
+UPDATEPROGRESS 83
 UPDATEPROGRESS 85
+UPDATEPROGRESS 86
+UPDATEPROGRESS 87
 UPDATEPROGRESS 88
+UPDATEPROGRESS 90
 UPDATEPROGRESS 91
-UPDATEPROGRESS 94
+UPDATEPROGRESS 92
+UPDATEPROGRESS 93
+UPDATEPROGRESS 95
+UPDATEPROGRESS 96
 UPDATEPROGRESS 97
+MESSAGE "Unit top modules: sr_latch_tb bitcell_tb word_tb mem_tb d_flip_flop_tb fsm_tb."
+MESSAGE "$root top modules: sr_latch_tb bitcell_tb word_tb mem_tb d_flip_flop_tb fsm_tb."
 UPDATEPROGRESS 100
-MESSAGE "$root top modules: sr_latch_tb bitcell_tb word_tb mem_tb."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."

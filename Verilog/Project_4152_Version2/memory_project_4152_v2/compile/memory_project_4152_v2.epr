@@ -1,1 +1,12 @@
+"../src/d_flip_flop.v"	1
+"../src/sr_latch.v"	1
+"../src/fsm.v"	1
+"../src/bitcell.v"	1
+"../src/sr_latch_tb.v"	1
+"../src/bitcell_tb.v"	1
+"../src/word.v"	1
+"../src/word_tb.v"	1
 "../src/mem.v"	1
+"../src/mem_tb.v"	1
+"../src/d_flip_flop_tb.v"	1
+"../src/fsm_tb.v"	1

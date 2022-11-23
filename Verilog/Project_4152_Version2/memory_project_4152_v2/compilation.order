@@ -6,3 +6,7 @@
 .\src\word_tb.v
 .\src\mem.v
 .\src\mem_tb.v
+.\src\d_flip_flop.v
+.\src\d_flip_flop_tb.v
+.\src\fsm.v
+.\src\fsm_tb.v

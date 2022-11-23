@@ -1,13 +1,15 @@
-Active-HDL 13.0.376.8320 2022-11-22 17:48:00
+Active-HDL 13.0.376.8320 2022-11-23 17:01:38
 
 Elaboration top modules:
-Verilog Module                mem_tb
+Verilog Module                fsm_tb
 
 
 ----------------------------------------------------------------------------------------------------------
 Verilog Module          | Library                | Info | Compiler Version          | Compilation Options
 ----------------------------------------------------------------------------------------------------------
-mem_tb                  | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+fsm_tb                  | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+fsm                     | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+d_flip_flop             | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
 mem                     | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
 word                    | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
 bitcell                 | memory_project_4152_v2 |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
@@ -19,3 +21,9 @@ Library                 | Comment
 ----------------------------------------------------------------------------------------------------------
 memory_project_4152_v2  | None
 ----------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r fsm_tb
+
+
+The performance of simulation is reduced. Version Student Edition

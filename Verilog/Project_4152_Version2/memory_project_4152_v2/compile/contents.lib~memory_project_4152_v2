@@ -1,10 +1,18 @@
-82
+84
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 1 "../src/bitcell.v" 3 bitcell
 ~A 1 "../src/bitcell.v" 3 bitcell
 ~M 3 "../src/bitcell_tb.v" 2 bitcell_tb
 ~A 1 "../src/bitcell_tb.v" 2 bitcell_tb
+~M 1 "../src/d_flip_flop.v" 2 d_flip_flop
+~A 1 "../src/d_flip_flop.v" 2 d_flip_flop
+~M 3 "../src/d_flip_flop_tb.v" 2 d_flip_flop_tb
+~A 1 "../src/d_flip_flop_tb.v" 2 d_flip_flop_tb
+~M 1 "../src/fsm.v" 2 fsm
+~A 1 "../src/fsm.v" 2 fsm
+~M 3 "../src/fsm_tb.v" 2 fsm_tb
+~A 1 "../src/fsm_tb.v" 2 fsm_tb
 ~M 1 "../src/mem.v" 2 mem
 ~A 1 "../src/mem.v" 2 mem
 ~M 3 "../src/mem_tb.v" 2 mem_tb

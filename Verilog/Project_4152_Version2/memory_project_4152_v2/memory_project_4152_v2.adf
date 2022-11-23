@@ -16,6 +16,7 @@ LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\Users\Saltuk\Deeers\Integrated\prj\memory_project_4152\Verilog\Project_4152_Version2\memory_project_4152_v2\src
 [folders]
 name0=ALINT-PRO Workspaces
 directory0=c:\My_Designs\Project_4152_Version2\memory_project_4152_v2\
@@ -62,6 +63,10 @@ extension11=asdb;awc;asdbc;asdbe
 /word_tb.v=-1
 /mem.v=-1
 /mem_tb.v=-1
+/d_flip_flop.v=-1
+/d_flip_flop_tb.v=-1
+/fsm.v=-1
+/fsm_tb.v=-1
 [Files.Data]
 .\src\sr_latch.v=Verilog Source Code
 .\src\sr_latch_tb.v=Verilog Source Code
@@ -71,6 +76,10 @@ extension11=asdb;awc;asdbc;asdbe
 .\src\word_tb.v=Verilog Source Code
 .\src\mem.v=Verilog Source Code
 .\src\mem_tb.v=Verilog Source Code
+.\src\d_flip_flop.v=Verilog Source Code
+.\src\d_flip_flop_tb.v=Verilog Source Code
+.\src\fsm.v=Verilog Source Code
+.\src\fsm_tb.v=Verilog Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
